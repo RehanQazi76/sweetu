@@ -3,7 +3,8 @@ import 'package:iconsax/iconsax.dart';
 import 'package:sweetu/utils/constants.dart';
 
 class CProductCardVertical extends StatefulWidget {
-  const CProductCardVertical({super.key});
+  CProductCardVertical({super.key, this.selected = false});
+  final bool selected;
 
   @override
   State<CProductCardVertical> createState() => _CProductCardVerticalState();
@@ -13,7 +14,7 @@ class _CProductCardVerticalState extends State<CProductCardVertical> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: () {},
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(5),
@@ -53,8 +54,7 @@ class _CProductCardVerticalState extends State<CProductCardVertical> {
                   child: const Text("27%"),
                 ),
               ),
-              //add to whishlist button/icon
-    
+              //add to wishlist button/icon
               Positioned(
                 top: 0,
                 right: 0,
@@ -65,9 +65,9 @@ class _CProductCardVerticalState extends State<CProductCardVertical> {
                   ),
                   child: IconButton(
                     onPressed: () {},
-                    icon: const Icon(
+                    icon: Icon(
                       Iconsax.heart5,
-                      color: Colors.white,
+                      color: widget.selected ? Colors.red : Colors.white,
                     ),
                   ),
                 ),
@@ -82,7 +82,7 @@ class _CProductCardVerticalState extends State<CProductCardVertical> {
               child: Column(
                 children: [
                   const Text(
-                    "Wiskas Adult (+1 year) Dry Cay food ,  Ocean Fish Flavour, 1.2 kg pack",
+                    "Wiskas Adult (+1 year) Dry Cat food, Ocean Fish Flavour, 1.2 kg pack",
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
@@ -103,11 +103,10 @@ class _CProductCardVerticalState extends State<CProductCardVertical> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                           color: ColorConstants.kpurple,
-                  borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      bottomRight: Radius.circular(15)),
-                          //
+                          color: ColorConstants.kpurple,
+                          borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(15),
+                              bottomRight: Radius.circular(15)),
                         ),
                         child: SizedBox(
                           height: 40,
@@ -115,11 +114,13 @@ class _CProductCardVerticalState extends State<CProductCardVertical> {
                           child: Center(
                             child: IconButton(
                               splashRadius: null,
-                              onPressed: (){}, icon: const Icon(Iconsax.add, 
-                            color: Colors.white,
-                            ),),
-                          )
-                          ,
+                              onPressed: () {},
+                              icon: const Icon(
+                                Iconsax.add,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
                         ),
                       )
                     ],

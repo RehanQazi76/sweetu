@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sweetu/screens/Cart.dart';
-import 'package:sweetu/screens/HomeScreen.dart';
-import 'package:sweetu/screens/Profile.dart';
+import 'package:sweetu/screens/Cart/Cart.dart';
+import 'package:sweetu/screens/login/ProductScreens/HomeScreen.dart';
+import 'package:sweetu/screens/Settings/Profile.dart';
 import 'package:sweetu/utils/constants.dart';
+
+import '../screens/Settings/Settings.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({super.key});
@@ -14,7 +16,7 @@ class Navigation extends StatefulWidget {
 class _NavigationState extends State<Navigation> {
   @override
   int CurrIndex=0;
-  final screens=const[HomePage(), ProfilePage(), Cart()];
+  final screens=const[HomePage(),  Cart(),Settings()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

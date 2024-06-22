@@ -1,33 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'package:iconsax/iconsax.dart';
 class CAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CAppBar(
       {super.key,
       this.title,
-      this.ShowbackArrow=false,
+      this.showbackArrow=false,
       this.leadingIcon,
       this.actions,
-      this.leadikngOnPressed});
+      this.color =Colors.white,
+      this.leadingOnPressed});
 
   final Widget? title;
-  final bool ShowbackArrow;
+  final bool showbackArrow;
   final IconData? leadingIcon;
   final List<Widget>? actions;
-  final VoidCallback? leadikngOnPressed;
+  final VoidCallback? leadingOnPressed;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor:color ,
       elevation: 0,
       title: title,
       titleTextStyle: const TextStyle(color: Colors.black),
       automaticallyImplyLeading: false,
-      leading: ShowbackArrow
-          ? IconButton(
-              onPressed: () => Get.back(), icon: const Icon(Icons.arrow_left))
-          :leadingIcon!=null? IconButton(onPressed: leadikngOnPressed, icon: Icon(leadingIcon)):null,
+      leading: showbackArrow
+          ? IconButton(onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left_24, size: 30,color: Colors.black,))
+          :leadingIcon!=null? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon)):null,
           actions: actions,
     );
   }

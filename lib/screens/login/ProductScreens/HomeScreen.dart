@@ -4,7 +4,7 @@ import 'package:sweetu/widgets/AppBar.dart';
 import 'package:sweetu/widgets/InputField.dart';
 import 'package:sweetu/widgets/Products/CProductCardVertical.dart';
 
-import '../utils/constants.dart';
+import '../../../utils/constants.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisSpacing: 16,
                     mainAxisExtent: 301
                     ),
-                itemBuilder: (_, index) => const CProductCardVertical(),
+                itemBuilder: (_, index) =>  CProductCardVertical(),
               ),
             ),
           ),

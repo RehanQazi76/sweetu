@@ -53,8 +53,7 @@ flutter:
   assets:
     - assets/images/logo.png
     - assets/images/catfood.png
-
-
+    - assets/images/profileimg.png
 
 
   # fonts:

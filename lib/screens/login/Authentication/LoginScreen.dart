@@ -2,8 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sweetu/widgets/NavigationBar.dart';
-import 'package:sweetu/screens/login/Signup.dart';
-import 'package:sweetu/widgets/Button.dart';
+import 'package:sweetu/screens/login/Authentication/Signup.dart';
+import 'package:sweetu/widgets/Buttons/Button.dart';
 import 'package:sweetu/widgets/Textbutton.dart';
 
 
