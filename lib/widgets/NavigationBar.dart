@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sweetu/screens/Cart/Cart.dart';
-import 'package:sweetu/screens/login/ProductScreens/HomeScreen.dart';
+import 'package:sweetu/screens/HomeScreen.dart';
 import 'package:sweetu/screens/Settings/Profile.dart';
 import 'package:sweetu/utils/constants.dart';
 

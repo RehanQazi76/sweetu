@@ -7,20 +7,18 @@ class CircularImage extends StatelessWidget {
   const CircularImage({
     Key? key,
     this.imgString,
-    this.imgUrl,
+    this.isNetwork=false,
     required this.radius,
   }) : super(key: key);
 
   final String? imgString;
-  final String? imgUrl;
+  final bool isNetwork;
   final double radius;
 
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      backgroundImage: imgUrl == null
-          ? AssetImage(imgString!) as ImageProvider
-          : NetworkImage(imgUrl!),
+      backgroundImage: isNetwork? NetworkImage(imgString!): AssetImage(imgString!) as ImageProvider,
       radius: radius,
     );
   }

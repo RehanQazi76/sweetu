@@ -26,8 +26,7 @@ class CAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: title,
       titleTextStyle: const TextStyle(color: Colors.black),
       automaticallyImplyLeading: false,
-      leading: showbackArrow
-          ? IconButton(onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left_24, size: 30,color: Colors.black,))
+      leading: showbackArrow? IconButton(onPressed: () => Navigator.pop(context), icon: const Icon(Iconsax.arrow_left_24, size: 30,color: Colors.black,))
           :leadingIcon!=null? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon)):null,
           actions: actions,
     );
