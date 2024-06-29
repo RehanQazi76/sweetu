@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:sweetu/screens/Cart/Cart.dart';
 import 'package:sweetu/screens/HomeScreen.dart';
 import 'package:sweetu/screens/Settings/Profile.dart';
+import 'package:sweetu/screens/WhishList/whishList.dart';
 import 'package:sweetu/utils/constants.dart';
 
 import '../../screens/Settings/Settings.dart';
@@ -16,7 +18,7 @@ class Navigation extends StatefulWidget {
 class _NavigationState extends State<Navigation> {
   @override
   int CurrIndex=0;
-  final screens=const[HomePage(),  Cart(),Settings()];
+  final screens=const[HomePage(),WishList(),  Cart(),Settings()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,8 +36,7 @@ class _NavigationState extends State<Navigation> {
         ),
         child: BottomNavigationBar (
           elevation: 0,
-          selectedItemColor: Colors.white,
-          backgroundColor: ColorConstants.kpurple,
+         backgroundColor: ColorConstants.kpurple,
           currentIndex: CurrIndex,
           onTap: (value){
             setState(() {
@@ -45,9 +46,10 @@ class _NavigationState extends State<Navigation> {
           items:[
             BottomNavigationBarItem(
               icon: Icon(Icons.home,
-            color: CurrIndex==0?Colors.white:Colors.black), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.shopping_cart,color: CurrIndex==1?Colors.white:Colors.black), label: "Cart"),
-            BottomNavigationBarItem(icon: Icon(Icons.person,color: CurrIndex==2?Colors.white:Colors.black), label: "Profile"),
+            color: CurrIndex==0?Colors.white:Colors.black), label: "Home",backgroundColor: ColorConstants.kpurple),
+            BottomNavigationBarItem(icon: Icon(Iconsax.heart,color: CurrIndex==1?Colors.white:Colors.black), label: "Whish List",backgroundColor: ColorConstants.kpurple),
+            BottomNavigationBarItem(icon: Icon(Icons.shopping_cart,color: CurrIndex==2?Colors.white:Colors.black), label: "Cart",backgroundColor: ColorConstants.kpurple),
+            BottomNavigationBarItem(icon: Icon(Icons.person,color: CurrIndex==3?Colors.white:Colors.black), label: "Profile",backgroundColor: ColorConstants.kpurple),
           ],
         ),
       ),
