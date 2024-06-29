@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:sweetu/widgets/AppBar.dart';
+import 'package:sweetu/widgets/Bottom%20and%20top%20bars/AppBar.dart';
 import 'package:sweetu/widgets/CircularImage/circularImage.dart';
-import 'package:sweetu/widgets/SectionHeader.dart';
+import 'package:sweetu/widgets/Text/SectionHeader.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

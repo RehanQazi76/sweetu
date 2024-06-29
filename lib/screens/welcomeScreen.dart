@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sweetu/screens/login/Authentication/LoginScreen.dart';
-import 'package:sweetu/screens/login/Authentication/Signup.dart';
+import 'package:sweetu/screens/login/Loginscreen.dart';
+import 'package:sweetu/screens/login/Signup.dart';
 import 'package:sweetu/widgets/Buttons/Button.dart';
-import 'package:sweetu/widgets/Textbutton.dart';
+import 'package:sweetu/widgets/Buttons/Textbutton.dart';
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -45,7 +45,7 @@ class WelcomeScreen extends StatelessWidget {
             Button(message: "Sign In ", 
             onPressed: (){
               
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreeen()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
             }),
             Textbutton(message: "Create an account", onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: ((context) => const SignUp())));

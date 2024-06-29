@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:sweetu/widgets/AppBar.dart';
-import 'package:sweetu/widgets/CustomBottom/CustomBottomCurve.dart';
-import 'package:sweetu/widgets/InputField.dart';
+import 'package:sweetu/widgets/Bottom%20and%20top%20bars/AppBar.dart';
+import 'package:sweetu/widgets/CustomBottomCurve%20Widget/CustomBottomCurve.dart';
+import 'package:sweetu/widgets/InputFileds/InputField.dart';
 import 'package:sweetu/widgets/Products/CProductCardVertical.dart';
 import '../utils/constants.dart';
 

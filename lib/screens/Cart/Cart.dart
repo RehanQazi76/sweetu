@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:sweetu/utils/constants.dart';
-import 'package:sweetu/widgets/AppBar.dart';
+import 'package:sweetu/widgets/Bottom%20and%20top%20bars/AppBar.dart';
 
 import '../../widgets/Products/CProductCardVertical.dart';
 
@@ -23,7 +21,7 @@ class _CartState extends State<Cart> {
               fontWeight: FontWeight.w400,
             ),),
         actions: [Container(
-          margin: EdgeInsets.all(10),
+          margin:const EdgeInsets.all(10),
           padding: const EdgeInsets.all(8.0),
           child: GestureDetector(onTap: () => {},  child: Icon(Icons.add, size: 35, color: ColorConstants.kpurple,),),
         )],

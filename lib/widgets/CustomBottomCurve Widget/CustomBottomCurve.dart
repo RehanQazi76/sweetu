@@ -9,8 +9,10 @@ class CustomBottomCurve extends StatelessWidget {
   const CustomBottomCurve({
     super.key,
     required this.child,
+    this.bgColor = const Color.fromARGB(255, 102, 44, 203),
   });
   final Widget child;
+  final Color bgColor;
   @override
   Widget build(BuildContext context) {
     return ClipPath(
@@ -20,7 +22,7 @@ class CustomBottomCurve extends StatelessWidget {
        child: Container(
           padding: const EdgeInsets.all(0),
           
-        color: ColorConstants.kpurple,
+        color: bgColor,
         child: Stack(
          children: [
         

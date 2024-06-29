@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:sweetu/screens/ProductScreens/ProductScreen.dart';
 import 'package:sweetu/utils/constants.dart';
 
 class CProductCardVertical extends StatefulWidget {
@@ -14,7 +15,9 @@ class _CProductCardVerticalState extends State<CProductCardVertical> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductScreen()));
+      },
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(5),

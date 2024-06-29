@@ -33,6 +33,8 @@ dependencies:
   zoom_tap_animation: ^1.1.0
   get: ^4.6.5
   iconsax: ^0.0.8
+  flutter_rating_bar: ^4.0.1
+  readmore: ^2.2.0
 
 dev_dependencies:
   flutter_test:

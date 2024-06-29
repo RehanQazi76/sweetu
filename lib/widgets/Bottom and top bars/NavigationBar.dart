@@ -4,7 +4,7 @@ import 'package:sweetu/screens/HomeScreen.dart';
 import 'package:sweetu/screens/Settings/Profile.dart';
 import 'package:sweetu/utils/constants.dart';
 
-import '../screens/Settings/Settings.dart';
+import '../../screens/Settings/Settings.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({super.key});

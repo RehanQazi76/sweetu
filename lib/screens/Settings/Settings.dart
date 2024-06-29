@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:sweetu/screens/Settings/Profile.dart';
-import 'package:sweetu/widgets/AppBar.dart';
+import 'package:sweetu/widgets/Bottom%20and%20top%20bars/AppBar.dart';
 import '../../widgets/CircularImage/circularImage.dart';
-import '../../widgets/CustomBottom/CustomBottomCurve.dart';
+import '../../widgets/CustomBottomCurve Widget/CustomBottomCurve.dart';
 import '../../widgets/ListTiles/SettingMenuTile.dart';
 import '../../widgets/ListTiles/UserInfoTile.dart';
-import '../../widgets/SectionHeader.dart';
+import '../../widgets/Text/SectionHeader.dart';
 
 class Settings extends StatefulWidget {
   const Settings({super.key});

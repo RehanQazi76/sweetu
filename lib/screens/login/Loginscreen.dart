@@ -1,20 +1,20 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sweetu/widgets/NavigationBar.dart';
-import 'package:sweetu/screens/login/Authentication/Signup.dart';
+import 'package:sweetu/widgets/Bottom%20and%20top%20bars/NavigationBar.dart';
+import 'package:sweetu/screens/login/Signup.dart';
 import 'package:sweetu/widgets/Buttons/Button.dart';
-import 'package:sweetu/widgets/Textbutton.dart';
+import 'package:sweetu/widgets/Buttons/Textbutton.dart';
 
 
-class LoginScreeen extends StatefulWidget {
-  const LoginScreeen({super.key});
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<LoginScreeen> createState() => _LoginScreeenState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _LoginScreeenState extends State<LoginScreeen> {
+class _LoginScreenState extends State<LoginScreen> {
   TextEditingController email= TextEditingController();
   TextEditingController password= TextEditingController();
   bool? isChecked= false;
